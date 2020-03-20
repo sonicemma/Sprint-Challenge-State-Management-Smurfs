@@ -3,14 +3,14 @@ import {SmurfContext} from './SmurfContext';
 import SmurfCard from './SmurfCard';
 
 const SmurfList = () => {
-    const {smurfs} = useContext(SmurfContext);
+    const {data} = useContext(SmurfContext);
     return (
         <div className='SmurfList'>
             <h1>SmurfList</h1>
-            {smurfs.map(smurfs =>
+            {data.map(item =>
                 <SmurfCard 
-                    key={smurfs.id}
-                    smurf={smurfs}
+                    key={item.id}
+                    smurf={item}
                 />
                 )}
         </div>
