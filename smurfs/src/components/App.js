@@ -28,7 +28,7 @@ const App = () => {
     <SmurfContext.Provider value={{data}}>
         <h1>SMURFS! 2.0 W/ Redux</h1>
         <SmurfList />
-        <SmurfForm />
+        <SmurfForm setData={setData} data={data}/>
     </SmurfContext.Provider>
     </div>
   );
