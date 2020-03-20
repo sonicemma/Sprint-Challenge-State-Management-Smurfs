@@ -2,6 +2,7 @@ import React, { useState, useEffect} from "react";
 import {SmurfContext} from './SmurfContext';
 import axios from 'axios';
 import SmurfList from './SmurfList';
+import SmurfCard from './SmurfCard';
 import "./App.css";
 
 
